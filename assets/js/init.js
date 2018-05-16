@@ -670,6 +670,10 @@ jQuery(document).ready(function($){
     $('.js-field-imageset-ajax').lsFieldImagesetAjax();
     //$('.js-lbx-imageset').lsLightbox();
 
+    /*
+     * Вид переключатель
+     */
+    $('.js-toggle-view').lsToggleButtons();
     // Хук конца инициализации javascript-составляющих шаблона
     ls.hook.run('ls_template_init_end',[],window);
 });
