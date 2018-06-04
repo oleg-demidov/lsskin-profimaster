@@ -1,0 +1,15 @@
+{
+    "name": "gallery",
+    "version": "1.0.0",
+    "dependencies": {
+    },
+    "templates": {
+        "gallery":"gallery.tpl"
+    },
+    "scripts": {
+        "gallery":"js/gallery.js"
+    },
+    "styles": {
+        "gallery":"css/gallery.css"
+    }
+}

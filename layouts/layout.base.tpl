@@ -15,7 +15,6 @@
 {/block}
 
 {block 'layout_head_styles' append}
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="search" type="application/opensearchdescription+xml" href="{router page='search'}opensearch/" title="{Config::Get('view.name')}" />
 {/block}
 
@@ -54,11 +53,7 @@
 {block 'layout_body'}
     {hook run='layout_body_begin'}
 
-    {**
-     * Юзербар
-     *}
-    {component 'userbar'}
-
+    
 
     {**
      * Шапка
@@ -78,10 +73,12 @@
     <nav class="ls-grid-row layout-nav">
         {block 'nav_main'}
             {component 'nav' hook='main' activeItem=$sMenuHeadItemSelect mods='main' items=[
+                ['html' => {component 'logo'}],
                 [ 'text' => $aLang.topic.topics,   'url' => {router page='/'},      'name' => 'blog' ],
                 [ 'text' => $aLang.blog.blogs,     'url' => {router page='blogs'},  'name' => 'blogs' ],
                 [ 'text' => $aLang.user.users,     'url' => {router page='people'}, 'name' => 'people' ],
-                [ 'text' => $aLang.activity.title, 'url' => {router page='stream'}, 'name' => 'stream' ]
+                [ 'text' => $aLang.activity.title, 'url' => {router page='stream'}, 'name' => 'stream' ],
+                ['html' => {component 'userbar'}]
             ]}
         {/block}
     </nav>

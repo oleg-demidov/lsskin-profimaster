@@ -1,0 +1,35 @@
+/**
+ * Избранное
+ *
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+.ls-favourite {
+    cursor: pointer;
+}
+.ls-favourite-toggle {
+    display: inline-block;
+    color: #ddd;
+    font-size: 30px;
+    float: left;
+}
+.ls-favourite-toggle:hover {
+    color: #f8c300;
+}
+.ls-favourite--added .ls-favourite-toggle {
+    color: #f8c300;
+}
+.ls-favourite-count {
+    display: none;
+    margin-left: 0;
+    font-weight: bold;
+    
+}
+.ls-favourite--has-counter .ls-favourite-count {
+    display: inline-block;
+    line-height: 32px;
+    float: left;
+    margin-left: 5px;
+}

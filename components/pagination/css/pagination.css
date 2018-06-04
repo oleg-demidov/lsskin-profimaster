@@ -1,0 +1,76 @@
+/**
+ * Пагинация
+ */
+
+.ls-pagination {
+    overflow: hidden;
+    color: #aaa;
+    line-height: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+.ls-pagination:last-of-type{
+    margin-bottom: 0;
+}
+
+/* Список */
+.ls-pagination-list {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.ls-pagination-list:last-child {
+    margin-left: 0;
+}
+
+/* Элемент пагинации */
+.ls-pagination-item {
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2e8bbb;
+    border: 1px solid #eee;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+.ls-pagination-item-inner {
+    display: block;
+    padding: 9px;
+}
+.ls-pagination-item-text {
+    color: #aaa;
+}
+.ls-pagination-item-link {
+    color: #2e8bbb;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.ls-pagination-item-link:hover {
+    border-bottom: 3px solid #2e8bbb;
+    padding: 9px 9px 7px 9px;
+    
+}
+
+/* Текущая страница */
+.ls-pagination-item.active .ls-pagination-item-inner {
+    color: #ffffff;
+    background: #2e8bbb;
+    cursor: default;
+    border-bottom: 3px solid #f0ad4e;
+    padding: 9px 9px 7px 9px;
+    border-radius: 2px;
+}
+
+/**
+ * @modifier small
+ */
+.ls-pagination--small {
+    font-size: 11px;
+}
+.ls-pagination--small .ls-pagination-item-inner {
+    padding: 7px 9px 6px;
+}

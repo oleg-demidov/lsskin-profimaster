@@ -1,0 +1,16 @@
+.ls-gallery-item-link-header{
+    width: 100%;
+    display: block;
+    height: 500px;
+    text-align: center;
+}
+.ls-gallery-item-preview-header{
+    height: 500px;
+}
+.ls-gallery-list{
+    margin-top: 10px;
+    overflow: auto;
+}
+.ls-gallery-item {
+    float: left;
+}

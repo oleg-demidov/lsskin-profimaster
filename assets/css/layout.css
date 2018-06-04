@@ -16,7 +16,10 @@
 }
 .layout-content {
     background: #fff;
-    padding: 40px !important;
+    padding: 20px !important;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
 }
 .layout-nav .ls-nav.ls-nav--main {
     margin: 0 auto;
@@ -57,8 +60,8 @@
  */
 .layout-nav {
     padding: 0 50px;
-    margin-bottom: 10px;
-    background: #222;
+    margin: 15px 0;
+    background: #2e8bbb;
 }
 
 @media (max-width: 480px)  {

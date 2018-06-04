@@ -157,7 +157,7 @@ jQuery(document).ready(function($){
         trigger: 'click',
         classes: 'ls-tooltip-light'
     });
-
+    
     if (ls.registry.get('block_stream_show_tip')) {
         $('.js-title-comment, .js-title-topic').livequery(function () {
             $(this).lsTooltip({
@@ -668,12 +668,17 @@ jQuery(document).ready(function($){
      */
     
     $('.js-field-imageset-ajax').lsFieldImagesetAjax();
-    //$('.js-lbx-imageset').lsLightbox();
+    /*
+     * Галерея
+     */
+    $('.js-gallery').lsGallery();
 
     /*
      * Вид переключатель
      */
     $('.js-toggle-view').lsToggleButtons();
+    
+    
     // Хук конца инициализации javascript-составляющих шаблона
     ls.hook.run('ls_template_init_end',[],window);
 });
