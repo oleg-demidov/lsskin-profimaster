@@ -79,7 +79,7 @@
 .ls-jumbotron.layout-header {
     background-image: url(../images/header.png);
     background-position-x: center;
-    background-position-y: 120px;
+    background-position-y: 90px;
     -webkit-background-size: auto;
     background-size: auto;   
     background-repeat: no-repeat;
@@ -90,7 +90,10 @@
 .ls-jumbotron.layout-header .ls-jumbotron-title, .ls-jumbotron.layout-header .ls-jumbotron-subtitle{
     text-align: center;
     max-width: none;
+    font-weight: bold;
+    margin: 0 0 0px;
 }
 .ls-jumbotron.layout-header .name-second{
     color: #f8c300;
 }
+
