@@ -75,6 +75,22 @@
 /**
  * Шапка сайта
  */
-.ls-jumbotron {
-    background-image: url(../images/header.jpg);
+
+.ls-jumbotron.layout-header {
+    background-image: url(../images/header.png);
+    background-position-x: center;
+    background-position-y: 120px;
+    -webkit-background-size: auto;
+    background-size: auto;   
+    background-repeat: no-repeat;
+    height: 400px;
+    padding:0;
+}
+
+.ls-jumbotron.layout-header .ls-jumbotron-title, .ls-jumbotron.layout-header .ls-jumbotron-subtitle{
+    text-align: center;
+    max-width: none;
+}
+.ls-jumbotron.layout-header .name-second{
+    color: #f8c300;
 }

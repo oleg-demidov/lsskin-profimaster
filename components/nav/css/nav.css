@@ -41,7 +41,7 @@
  * Поддержка счетчиков
  */
 .ls-nav-item .ls-nav-item-badge {
-    line-height: 20px;
+    line-height: 19px;
     float: right;
     margin-left: 7px;
 }

@@ -53,8 +53,6 @@
 {block 'layout_body'}
     {hook run='layout_body_begin'}
 
-    
-
     {**
      * Шапка
      *}
@@ -74,15 +72,15 @@
         {block 'nav_main'}
             {component 'nav' hook='main' activeItem=$sMenuHeadItemSelect mods='main' items=[
                 ['html' => {component 'logo'}],
-                [ 'text' => $aLang.topic.topics,   'url' => {router page='/'},      'name' => 'blog' ],
-                [ 'text' => $aLang.blog.blogs,     'url' => {router page='blogs'},  'name' => 'blogs' ],
-                [ 'text' => $aLang.user.users,     'url' => {router page='people'}, 'name' => 'people' ],
-                [ 'text' => $aLang.activity.title, 'url' => {router page='stream'}, 'name' => 'stream' ],
+                [ 'text' => $aLang.plugin.ad.menu.community.title,   'url' => {router page='/'},      'name' => 'blog' ],
+                
                 ['html' => {component 'userbar'}]
             ]}
         {/block}
     </nav>
-
+    
+    {block 'layout_container_before'}
+    {/block}    
 
     {**
      * Основной контэйнер

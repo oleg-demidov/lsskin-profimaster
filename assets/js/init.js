@@ -377,7 +377,9 @@ jQuery(document).ready(function($){
     });
 
     // Управление кастомными полями
-    $( '.js-user-fields' ).lsUserFields();
+    $( '.js-user-fields' ).lsUserFields({
+        max:ls.registry.get('userfield_max_identical')
+    });
 
     // Фото пользователя
     $( '.js-user-photo' ).lsPhoto({
